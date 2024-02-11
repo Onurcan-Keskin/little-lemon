@@ -1,4 +1,4 @@
-package com.example.littlelemon.data
+package com.onurcan.little_lemon.data
 
 import android.content.Context
 import com.onurcan.little_lemon.data.model.User

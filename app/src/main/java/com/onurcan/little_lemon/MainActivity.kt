@@ -8,7 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.example.littlelemon.data.PreferenceRepository
+import com.onurcan.little_lemon.data.PreferenceRepository
 import com.onurcan.little_lemon.ui.navigation.Navigation
 import com.onurcan.little_lemon.ui.theme.app.AppTheme
 

@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.littlelemon.data.PreferenceRepository
+import com.onurcan.little_lemon.data.PreferenceRepository
 import com.onurcan.little_lemon.ui.screen.HomeScreen
 import com.onurcan.little_lemon.ui.screen.OnBoarding
 import com.onurcan.little_lemon.ui.screen.ProfileScreen

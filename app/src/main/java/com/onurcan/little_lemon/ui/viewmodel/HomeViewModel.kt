@@ -25,10 +25,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application = a
     }
 
     fun fetchData() {
-        appRepository.getMenuData()
-            .asResult()
-            .onEach { _menuData.value = it }
+        appRepository.getMenuData().asResult().onEach { _menuData.value = it }
             .launchIn(viewModelScope)
     }
-
 }
