@@ -67,6 +67,9 @@ dependencies {
     implementation(libs.ktor.client.json)
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
+    implementation(libs.compose.navigation)
+    implementation(libs.compose.livedata)
+    implementation(libs.glide)
 
     testImplementation(libs.junit)
 
