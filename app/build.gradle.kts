@@ -56,6 +56,8 @@ dependencies {
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.lifecycle.runtime)
+    implementation(libs.lifecycle.viewmodel)
     implementation(libs.activity.compose)
     implementation(platform(libs.compose.bom))
     implementation(libs.ui)
@@ -67,6 +69,8 @@ dependencies {
     implementation(libs.ktor.client.json)
     implementation(libs.room.runtime)
     kapt(libs.room.compiler)
+    annotationProcessor(libs.room.annotation)
+    implementation(libs.room.ktx)
     implementation(libs.compose.navigation)
     implementation(libs.compose.livedata)
     implementation(libs.glide)

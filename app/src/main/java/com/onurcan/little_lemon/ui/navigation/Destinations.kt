@@ -1,17 +1,23 @@
 package com.onurcan.little_lemon.ui.navigation
 
-interface Destinations {
-    val route: String
-}
+sealed interface Destinations {
+    fun getRoute(): String
 
-object Onboarding : Destinations {
-    override val route = "Onboarding"
-}
+    object Home : Destinations {
+        override fun getRoute(): String {
+            return "home"
+        }
+    }
 
-object Home : Destinations {
-    override val route = "Home"
-}
+    object Profile : Destinations {
+        override fun getRoute(): String {
+            return "profile"
+        }
+    }
 
-object Profile : Destinations {
-    override val route = "Profile"
+    object OnBoard : Destinations {
+        override fun getRoute(): String {
+            return "on_board"
+        }
+    }
 }

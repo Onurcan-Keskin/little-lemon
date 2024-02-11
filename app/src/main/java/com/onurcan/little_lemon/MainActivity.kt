@@ -8,27 +8,24 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.onurcan.little_lemon.ui.screens.NavigationComposable
-import com.onurcan.little_lemon.ui.theme.LittleLemonTheme
+import com.example.littlelemon.data.PreferenceRepository
+import com.onurcan.little_lemon.ui.navigation.Navigation
+import com.onurcan.little_lemon.ui.theme.app.AppTheme
 
 class MainActivity : ComponentActivity() {
-    val sharedPreferences by lazy { getSharedPreferences("Little Lemon", MODE_PRIVATE) }
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
+        val preferenceRepository =
+            PreferenceRepository.getPreferenceRepository(this.applicationContext)
         setContent {
-            LittleLemonTheme {
+            AppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    val navController = rememberNavController()
-                    NavigationComposable(
-                        context = applicationContext,
-                        navController = navController
-                    )
+                    val navHostController = rememberNavController()
+                    Navigation(navHostController = navHostController, preferenceRepository)
                 }
             }
         }
