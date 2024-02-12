@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">LittleLemon</string>
-    <!-- - - - - - - - - - - - - - - - - - - - - - - -
-    - - - - - - -  Used By OnBoarding - - - - - - - -
-    - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- OnBoarding -->
     <string name="on_boarding_title">Let\'s get to know you</string>
     <string name="on_boarding_sub_title">Personal Information</string>
     <string name="on_boarding_form_first_name_label">First name</string>
@@ -13,18 +11,14 @@
     <string name="on_boarding_registration_unsuccessful_msg">Registration unsuccessful! Please try again.</string>
     <string name="on_boarding_invalid_user_input">Registration unsuccessful. Please enter all data.</string>
 
-    <!-- - - - - - - - - - - - - - - - - - - - - - - -
-    - - - - - - -  Used By ProfileScreen - - - - - - - -
-    - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- ProfileScreen -->
     <string name="user_profile_first_name_label">First Name</string>
     <string name="user_profile_last_name_label">Last name</string>
     <string name="user_profile_email_label">Email</string>
     <string name="user_profile_title">Personal information</string>
     <string name="user_profile_log_out_btn_txt">Log out</string>
 
-    <!-- - - - - - - - - - - - - - - - - - - - - - - -
-    - - - - - - -  Used By HomeScreen - - - - - - - -
-    - - - - - - - - - - - - - - - - - - - - - - - -->
+    <!-- HomeScreen -->
     <string name="menu_item_loading_error_msg">Oops! Something went wrong</string>
     <string name="menu_item_reload_btn_txt">Retry</string>
     <string name="home_hero_section_title">Little Lemon</string>
